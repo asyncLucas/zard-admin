@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "ng build --configuration production --base-href=/zard-admin/ && ng deploy --base-href=/zard-admin/"
+    "deploy": "ng deploy --base-href=/zard-admin/"
   },
   "private": true,
   "dependencies": {
