@@ -1,0 +1,373 @@
+[
+  {
+    "id": "exp-2025-16",
+    "seller": "Adobe Creative Cloud",
+    "amount": -105,
+    "date": "2025-01-01T09:00:00.000Z",
+    "description": "Monthly Software Licensing Fee"
+  },
+  {
+    "id": "inv-2025-17",
+    "seller": "FutureTech Solutions (Client)",
+    "amount": 1550,
+    "date": "2025-01-20T14:00:00.000Z",
+    "description": "Change Request: Minor UI Adjustments"
+  },
+  {
+    "id": "exp-2025-18",
+    "seller": "Travel Express Agency",
+    "amount": -3200,
+    "date": "2025-02-15T12:00:00.000Z",
+    "description": "Business Travel for Client Meeting (NYC)"
+  },
+  {
+    "id": "inv-2025-19",
+    "seller": "Global Marketing Corp (Client)",
+    "amount": 5500,
+    "date": "2025-03-15T17:00:00.000Z",
+    "description": "Phase I Consulting and System Audit"
+  },
+  {
+    "id": "exp-2025-20",
+    "seller": "CloudHost Dynamics",
+    "amount": -260,
+    "date": "2025-04-12T15:30:00.000Z",
+    "description": "Monthly Server Hosting & Maintenance Fee"
+  },
+  {
+    "id": "inv-2025-21",
+    "seller": "Local Start-up Hub (Client)",
+    "amount": 1800,
+    "date": "2025-05-05T10:00:00.000Z",
+    "description": "Deployment and QA Support"
+  },
+  {
+    "id": "exp-2025-22",
+    "seller": "SkillUp Training",
+    "amount": -1200,
+    "date": "2025-05-20T11:00:00.000Z",
+    "description": "Annual Team Training Subscription"
+  },
+  {
+    "id": "inv-2025-23",
+    "seller": "FutureTech Solutions (Client)",
+    "amount": 4200,
+    "date": "2025-06-25T13:00:00.000Z",
+    "description": "Final Deliverable for Phase II"
+  },
+  {
+    "id": "exp-2025-24",
+    "seller": "Office Depot Supplies",
+    "amount": -310,
+    "date": "2025-07-01T14:30:00.000Z",
+    "description": "Office Refreshment and Stationary Stock"
+  },
+  {
+    "id": "inv-2025-25",
+    "seller": "New Client Onboarding (Client)",
+    "amount": 8500,
+    "date": "2025-07-15T16:00:00.000Z",
+    "description": "Full-Stack Development Project - Initial Payment"
+  },
+  {
+    "id": "exp-2025-26",
+    "seller": "Amazon Web Services (AWS)",
+    "amount": -1150,
+    "date": "2025-08-20T14:00:00.000Z",
+    "description": "Q3 Cloud Compute and Storage Costs"
+  },
+  {
+    "id": "inv-2025-27",
+    "seller": "Global Marketing Corp (Client)",
+    "amount": 6800,
+    "date": "2025-09-10T11:00:00.000Z",
+    "description": "API Integration and Testing"
+  },
+  {
+    "id": "exp-2025-28",
+    "seller": "QuickBooks Pro",
+    "amount": -50,
+    "date": "2025-09-30T10:00:00.000Z",
+    "description": "Monthly Accounting Software Add-on Fee"
+  },
+  {
+    "id": "inv-2025-29",
+    "seller": "Local Start-up Hub (Client)",
+    "amount": 2500,
+    "date": "2025-10-05T12:00:00.000Z",
+    "description": "Security Audit and Penetration Testing"
+  },
+  {
+    "id": "exp-2025-30",
+    "seller": "Google Ads Campaign",
+    "amount": -1500,
+    "date": "2025-10-25T09:30:00.000Z",
+    "description": "Q4 Digital Marketing Expense"
+  },
+  {
+    "id": "inv-2025-31",
+    "seller": "FutureTech Solutions (Client)",
+    "amount": 7100,
+    "date": "2025-11-15T15:00:00.000Z",
+    "description": "Consultation on 2026 Technology Roadmap"
+  },
+  {
+    "id": "exp-2025-32",
+    "seller": "Renewable Power Inc.",
+    "amount": -380,
+    "date": "2025-12-10T09:30:00.000Z",
+    "description": "Office Utility Payment (December 2025)"
+  },
+  {
+    "id": "inv-2025-33",
+    "seller": "Global Marketing Corp (Client)",
+    "amount": 10200,
+    "date": "2025-12-15T14:00:00.000Z",
+    "description": "Year-End System Optimization Retainer"
+  },
+  {
+    "id": "exp-2025-34",
+    "seller": "Team Holiday Party Venue",
+    "amount": -2500,
+    "date": "2025-12-20T17:00:00.000Z",
+    "description": "Annual Employee Celebration Expense"
+  },
+  {
+    "id": "inv-2025-35",
+    "seller": "New Client Onboarding (Client)",
+    "amount": 5800,
+    "date": "2025-12-28T11:00:00.000Z",
+    "description": "Deposit for Q1 2026 Project Kickoff"
+  },
+  {
+    "id": "exp-2025-36",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-01-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Jan)"
+  },
+  {
+    "id": "exp-2025-37",
+    "seller": "Legal Consult Services",
+    "amount": -750,
+    "date": "2025-01-15T16:00:00.000Z",
+    "description": "Contract Review for New Client"
+  },
+  {
+    "id": "inv-2025-38",
+    "seller": "Tech Innovators Ltd (Client)",
+    "amount": 4500,
+    "date": "2025-02-01T09:00:00.000Z",
+    "description": "Initial Consultation & Scope Definition"
+  },
+  {
+    "id": "exp-2025-39",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-02-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Feb)"
+  },
+  {
+    "id": "inv-2025-40",
+    "seller": "FutureTech Solutions (Client)",
+    "amount": 2500,
+    "date": "2025-02-20T12:00:00.000Z",
+    "description": "Emergency Bug Fix and Hotfix Deployment"
+  },
+  {
+    "id": "exp-2025-41",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-03-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Mar)"
+  },
+  {
+    "id": "exp-2025-42",
+    "seller": "Networking Hardware",
+    "amount": -450,
+    "date": "2025-03-05T14:00:00.000Z",
+    "description": "Router and Switch Replacement"
+  },
+  {
+    "id": "inv-2025-43",
+    "seller": "Global Marketing Corp (Client)",
+    "amount": 3500,
+    "date": "2025-03-20T11:00:00.000Z",
+    "description": "Database Refactoring Service"
+  },
+  {
+    "id": "exp-2025-44",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-04-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Apr)"
+  },
+  {
+    "id": "inv-2025-45",
+    "seller": "Tech Innovators Ltd (Client)",
+    "amount": 7200,
+    "date": "2025-04-25T15:30:00.000Z",
+    "description": "Custom API Development - Phase I"
+  },
+  {
+    "id": "exp-2025-46",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-05-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (May)"
+  },
+  {
+    "id": "exp-2025-47",
+    "seller": "Insurance Premium",
+    "amount": -950,
+    "date": "2025-05-15T09:00:00.000Z",
+    "description": "Semi-Annual Business Liability Insurance"
+  },
+  {
+    "id": "inv-2025-48",
+    "seller": "Local Start-up Hub (Client)",
+    "amount": 4100,
+    "date": "2025-05-30T13:00:00.000Z",
+    "description": "Frontend UI/UX Overhaul"
+  },
+  {
+    "id": "exp-2025-49",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-06-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Jun)"
+  },
+  {
+    "id": "exp-2025-50",
+    "seller": "Internal R&D",
+    "amount": -1500,
+    "date": "2025-06-10T14:00:00.000Z",
+    "description": "Investment in new proprietary tool development"
+  },
+  {
+    "id": "inv-2025-51",
+    "seller": "New Client Onboarding (Client)",
+    "amount": 11000,
+    "date": "2025-06-30T16:00:00.000Z",
+    "description": "Full-Stack Development Project - Milestone 1"
+  },
+  {
+    "id": "exp-2025-52",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-07-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Jul)"
+  },
+  {
+    "id": "inv-2025-53",
+    "seller": "Tech Innovators Ltd (Client)",
+    "amount": 5600,
+    "date": "2025-07-25T11:00:00.000Z",
+    "description": "Custom API Development - Phase II"
+  },
+  {
+    "id": "exp-2025-54",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-08-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Aug)"
+  },
+  {
+    "id": "inv-2025-55",
+    "seller": "FutureTech Solutions (Client)",
+    "amount": 3800,
+    "date": "2025-08-15T15:00:00.000Z",
+    "description": "Small Project: Legacy System Documentation"
+  },
+  {
+    "id": "exp-2025-56",
+    "seller": "Payroll Software Co.",
+    "amount": -150,
+    "date": "2025-08-30T10:00:00.000Z",
+    "description": "Annual Payroll Software Subscription"
+  },
+  {
+    "id": "exp-2025-57",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-09-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Sep)"
+  },
+  {
+    "id": "inv-2025-58",
+    "seller": "Global Marketing Corp (Client)",
+    "amount": 15000,
+    "date": "2025-09-20T12:00:00.000Z",
+    "description": "Large Project: New E-commerce Platform Build"
+  },
+  {
+    "id": "exp-2025-59",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-10-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Oct)"
+  },
+  {
+    "id": "exp-2025-60",
+    "seller": "Accountant Services",
+    "amount": -1200,
+    "date": "2025-10-15T14:30:00.000Z",
+    "description": "Year-End Tax Preparation and Consulting"
+  },
+  {
+    "id": "inv-2025-61",
+    "seller": "Tech Innovators Ltd (Client)",
+    "amount": 9500,
+    "date": "2025-10-30T10:00:00.000Z",
+    "description": "Custom API Development - Final Delivery"
+  },
+  {
+    "id": "exp-2025-62",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-11-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Nov)"
+  },
+  {
+    "id": "inv-2025-63",
+    "seller": "Local Start-up Hub (Client)",
+    "amount": 2200,
+    "date": "2025-11-25T11:00:00.000Z",
+    "description": "Ad-Hoc Technical Support and Consultation"
+  },
+  {
+    "id": "exp-2025-64",
+    "seller": "Office Rent Inc.",
+    "amount": -1800,
+    "date": "2025-12-01T10:30:00.000Z",
+    "description": "Monthly Office Lease Payment (Dec)"
+  },
+  {
+    "id": "inv-2025-65",
+    "seller": "New Client Onboarding (Client)",
+    "amount": 7500,
+    "date": "2025-12-05T13:00:00.000Z",
+    "description": "Full-Stack Development Project - Milestone 2"
+  },
+  {
+    "id": "exp-2025-66",
+    "seller": "Employee Bonuses",
+    "amount": -4000,
+    "date": "2025-12-15T14:00:00.000Z",
+    "description": "Year-End Performance Bonuses Paid"
+  },
+  {
+    "id": "exp-2025-67",
+    "seller": "Travel Express Agency",
+    "amount": -800,
+    "date": "2025-12-20T16:00:00.000Z",
+    "description": "Client Acquisition Travel Expense"
+  },
+  {
+    "id": "inv-2025-68",
+    "seller": "Tech Innovators Ltd (Client)",
+    "amount": 1200,
+    "date": "2025-12-28T10:00:00.000Z",
+    "description": "Retainer Fee for January Support"
+  }
+]
