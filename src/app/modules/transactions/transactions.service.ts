@@ -9,6 +9,6 @@ export class TransactionsService {
   readonly #http = inject(HttpClient);
 
   list() {
-    return this.#http.get<Transaction[]>('/assets/data/transactions.json');
+    return this.#http.get<Transaction[]>('assets/data/transactions.json');
   }
 }
