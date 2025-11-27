@@ -1,0 +1,304 @@
+{
+  "name": "Angular",
+  "children": [
+    {
+      "name": "Fundamentals",
+      "children": [
+        {
+          "name": "TypeScript Basics",
+          "children": [
+            { "name": "Types & Interfaces", "value": "Understanding type system, interfaces, and type annotations" },
+            { "name": "Classes & Decorators", "value": "Object-oriented programming and metadata decoration" },
+            { "name": "Modules & Imports", "value": "ES6 modules and organizing code" }
+          ]
+        },
+        {
+          "name": "Angular CLI",
+          "children": [
+            { "name": "Project Setup", "value": "Creating and configuring Angular projects" },
+            { "name": "Generate Commands", "value": "Creating components, services, modules, etc." },
+            { "name": "Build & Serve", "value": "Development server and production builds" }
+          ]
+        },
+        {
+          "name": "Architecture",
+          "children": [
+            { "name": "Modules (NgModules)", "value": "Organizing application into cohesive blocks" },
+            { "name": "Components", "value": "Building blocks of Angular UI" },
+            { "name": "Templates", "value": "HTML views with Angular syntax" },
+            { "name": "Metadata", "value": "Decorators that configure classes" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Components & Templates",
+      "children": [
+        {
+          "name": "Component Basics",
+          "children": [
+            { "name": "Component Decorator", "value": "Configuring component metadata" },
+            { "name": "Component Lifecycle", "value": "Hooks like ngOnInit, ngOnDestroy, ngOnChanges" },
+            { "name": "Component Interaction", "value": "@Input, @Output, and EventEmitter" },
+            { "name": "View Encapsulation", "value": "Styling scope and shadow DOM" }
+          ]
+        },
+        {
+          "name": "Templates",
+          "children": [
+            { "name": "Interpolation", "value": "{{ }} syntax for displaying data" },
+            { "name": "Property Binding", "value": "[property]='value' syntax" },
+            { "name": "Event Binding", "value": "(event)='handler()' syntax" },
+            { "name": "Two-Way Binding", "value": "[(ngModel)] for form inputs" }
+          ]
+        },
+        {
+          "name": "Directives",
+          "children": [
+            { "name": "Structural Directives", "value": "*ngIf, *ngFor, *ngSwitch for DOM manipulation" },
+            { "name": "Attribute Directives", "value": "ngClass, ngStyle for element behavior" },
+            { "name": "Custom Directives", "value": "Creating your own directives" }
+          ]
+        },
+        {
+          "name": "Pipes",
+          "children": [
+            { "name": "Built-in Pipes", "value": "date, uppercase, lowercase, currency, etc." },
+            { "name": "Custom Pipes", "value": "Creating transformation pipes" },
+            { "name": "Async Pipe", "value": "Handling observables in templates" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Services & Dependency Injection",
+      "children": [
+        {
+          "name": "Services",
+          "children": [
+            { "name": "Creating Services", "value": "Reusable business logic and data" },
+            { "name": "@Injectable Decorator", "value": "Making services injectable" },
+            { "name": "Service Scope", "value": "Root, module, and component level services" }
+          ]
+        },
+        {
+          "name": "Dependency Injection",
+          "children": [
+            { "name": "Injector Hierarchy", "value": "Understanding DI tree" },
+            { "name": "Providers", "value": "Configuring how dependencies are created" },
+            { "name": "Injection Tokens", "value": "InjectionToken for non-class dependencies" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Routing & Navigation",
+      "children": [
+        {
+          "name": "Router Basics",
+          "children": [
+            { "name": "Router Configuration", "value": "Setting up routes and paths" },
+            { "name": "RouterLink", "value": "Navigating between views" },
+            { "name": "Router Outlet", "value": "Displaying routed components" }
+          ]
+        },
+        {
+          "name": "Advanced Routing",
+          "children": [
+            { "name": "Route Parameters", "value": "Dynamic segments in URLs" },
+            { "name": "Child Routes", "value": "Nested routing structure" },
+            { "name": "Route Guards", "value": "CanActivate, CanDeactivate, Resolve" },
+            { "name": "Lazy Loading", "value": "Loading modules on demand" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forms",
+      "children": [
+        {
+          "name": "Template-Driven Forms",
+          "children": [
+            { "name": "NgModel", "value": "Two-way data binding in forms" },
+            { "name": "Form Validation", "value": "Built-in validators (required, minLength, etc.)" },
+            { "name": "Form Submission", "value": "Handling form submit events" }
+          ]
+        },
+        {
+          "name": "Reactive Forms",
+          "children": [
+            { "name": "FormControl", "value": "Individual form field management" },
+            { "name": "FormGroup", "value": "Grouping multiple controls" },
+            { "name": "FormBuilder", "value": "Simplified form creation" },
+            { "name": "Validators", "value": "Synchronous and asynchronous validation" },
+            { "name": "Dynamic Forms", "value": "Creating forms programmatically" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTTP & Backend Communication",
+      "children": [
+        {
+          "name": "HttpClient",
+          "children": [
+            { "name": "GET Requests", "value": "Fetching data from APIs" },
+            { "name": "POST/PUT/DELETE", "value": "Creating, updating, deleting data" },
+            { "name": "Request Options", "value": "Headers, params, and configuration" },
+            { "name": "Error Handling", "value": "Catching and handling HTTP errors" }
+          ]
+        },
+        {
+          "name": "Interceptors",
+          "children": [
+            { "name": "HTTP Interceptors", "value": "Modifying requests and responses globally" },
+            { "name": "Authentication", "value": "Adding tokens to requests" },
+            { "name": "Error Interceptors", "value": "Global error handling" }
+          ]
+        },
+        {
+          "name": "RxJS Integration",
+          "children": [
+            { "name": "Observables", "value": "Handling asynchronous data streams" },
+            { "name": "Operators", "value": "map, filter, switchMap, catchError, etc." },
+            { "name": "Subjects", "value": "BehaviorSubject, ReplaySubject for state" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "State Management",
+      "children": [
+        {
+          "name": "Component State",
+          "children": [
+            { "name": "Local State", "value": "Component properties and variables" },
+            { "name": "State Sharing", "value": "Parent-child communication" }
+          ]
+        },
+        {
+          "name": "Services for State",
+          "children": [
+            { "name": "Shared Services", "value": "Using services to share state" },
+            { "name": "BehaviorSubject", "value": "Observable state management" }
+          ]
+        },
+        {
+          "name": "NgRx (Redux Pattern)",
+          "children": [
+            { "name": "Store", "value": "Central state container" },
+            { "name": "Actions", "value": "Events that trigger state changes" },
+            { "name": "Reducers", "value": "Pure functions that update state" },
+            { "name": "Effects", "value": "Side effects and async operations" },
+            { "name": "Selectors", "value": "Querying state efficiently" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "children": [
+        {
+          "name": "Change Detection",
+          "children": [
+            { "name": "Default Strategy", "value": "How Angular detects changes" },
+            { "name": "OnPush Strategy", "value": "Performance optimization" },
+            { "name": "Manual Change Detection", "value": "ChangeDetectorRef usage" }
+          ]
+        },
+        {
+          "name": "Content Projection",
+          "children": [
+            { "name": "ng-content", "value": "Projecting content into components" },
+            { "name": "Multi-slot Projection", "value": "Multiple projection points" }
+          ]
+        },
+        {
+          "name": "Dynamic Components",
+          "children": [
+            { "name": "ComponentFactoryResolver", "value": "Creating components dynamically" },
+            { "name": "ViewContainerRef", "value": "Inserting components into view" }
+          ]
+        },
+        {
+          "name": "Animations",
+          "children": [
+            { "name": "Animation Triggers", "value": "Defining animations" },
+            { "name": "States & Transitions", "value": "Animating state changes" },
+            { "name": "Keyframes", "value": "Complex animation sequences" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "children": [
+        {
+          "name": "Unit Testing",
+          "children": [
+            { "name": "Jasmine & Karma", "value": "Testing framework and test runner" },
+            { "name": "TestBed", "value": "Configuring testing module" },
+            { "name": "Component Testing", "value": "Testing component logic and templates" },
+            { "name": "Service Testing", "value": "Testing service methods" },
+            { "name": "Mocking", "value": "Mocking dependencies and HTTP" }
+          ]
+        },
+        {
+          "name": "E2E Testing",
+          "children": [
+            { "name": "Protractor/Cypress", "value": "End-to-end testing tools" },
+            { "name": "User Flows", "value": "Testing complete user scenarios" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance & Optimization",
+      "children": [
+        {
+          "name": "Performance",
+          "children": [
+            { "name": "Lazy Loading", "value": "Loading modules on demand" },
+            { "name": "OnPush Change Detection", "value": "Reducing change detection cycles" },
+            { "name": "TrackBy Functions", "value": "Optimizing *ngFor rendering" },
+            { "name": "Pure Pipes", "value": "Efficient data transformation" }
+          ]
+        },
+        {
+          "name": "Build Optimization",
+          "children": [
+            { "name": "AOT Compilation", "value": "Ahead-of-time compilation" },
+            { "name": "Tree Shaking", "value": "Removing unused code" },
+            { "name": "Bundle Analysis", "value": "Analyzing and reducing bundle size" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Modern Angular Features",
+      "children": [
+        {
+          "name": "Standalone Components",
+          "children": [
+            { "name": "Standalone API", "value": "Components without NgModules" },
+            { "name": "Imports in Components", "value": "Direct dependency imports" }
+          ]
+        },
+        {
+          "name": "Signals (Angular 16+)",
+          "children": [
+            { "name": "Signal API", "value": "Reactive primitives for state" },
+            { "name": "Computed Signals", "value": "Derived reactive values" },
+            { "name": "Effects", "value": "Side effects with signals" }
+          ]
+        },
+        {
+          "name": "Inject Function",
+          "children": [
+            { "name": "inject()", "value": "Functional dependency injection" }
+          ]
+        }
+      ]
+    }
+  ]
+}
