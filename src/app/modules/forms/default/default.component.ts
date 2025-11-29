@@ -27,7 +27,7 @@ import { ZardDatePickerComponent } from "@app/shared/components/date-picker/date
             z-input type="select" 
             placeholder="Choose any date" 
             formControlName="anyDate" 
-            zFormat="dd/mm/yyyy"
+            zFormat="dd/MM/yyyy"
           />
         </z-form-control>
         <z-form-message zType="default">AnyDate must be a valid date.</z-form-message>
