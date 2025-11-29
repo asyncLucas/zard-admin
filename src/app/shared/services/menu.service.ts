@@ -17,6 +17,7 @@ export class MenuService {
     { icon: 'house', label: 'Dashboard', translationKey: 'MENU.DASHBOARD', link: '/dashboard' },
     { icon: 'folder', label: 'Transactions', translationKey: 'MENU.TRANSACTIONS', link: '/transactions' },
     { icon: 'test', label: 'Testing', translationKey: 'MENU.TESTING', link: '/testing' },
+    { icon: 'test', label: 'Forms', translationKey: 'MENU.FORMS', link: '/forms' },
     { icon: 'brain', label: 'Mind Maps', translationKey: 'MENU.MIND_MAPS', link: '/mind-maps' },
   ]);
 }

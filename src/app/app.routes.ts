@@ -3,6 +3,7 @@ import { UserProfilePageComponent } from './modules/profile/profile.page';
 import { SettingsPage } from './modules/settings/settings.page';
 import { PlansComponent } from './modules/mind-maps/plans/plans.component';
 import { TestingComponent } from './modules/testing/testing/testing.component';
+import { DefaultFormReactiveComponent } from './modules/forms/default/default.component';
 
 export const routes: Routes = [
   {
@@ -52,6 +53,11 @@ export const routes: Routes = [
         path: 'testing',
         title: 'Testing',
         component: TestingComponent
+      },
+      {
+        path: 'forms',
+        title: 'Forms',
+        component: DefaultFormReactiveComponent
       }
     ],
   },
