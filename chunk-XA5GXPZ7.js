@@ -1,0 +1,1 @@
+import{Ca as e,X as o}from"./chunk-BKGHEENM.js";var r=class t{weekdays=e(["Su","Mo","Tu","We","Th","Fr","Sat"]);months=e(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]);static \u0275fac=function(a){return new(a||t)};static \u0275prov=o({token:t,factory:t.\u0275fac,providedIn:"root"})};export{r as a};
