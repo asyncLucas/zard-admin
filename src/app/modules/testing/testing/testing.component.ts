@@ -10,7 +10,7 @@ import { ZardCardComponent } from '@app/shared/components/card/card.component';
   imports: [DynamicZardFormComponent, ZardCardComponent],
   template: `
     <z-card zTitle="Dynamic ZardUI Form" class="mx-auto p-6">
-      <app-dynamic-form
+      <ez-dynamic-form
         [formConfig]="formConfig"
         (submitted)="onFormSubmitted($event)"
       />
