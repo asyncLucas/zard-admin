@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1764435390629,
+  "timestamp": 1764439926301,
   "index": "/zard-admin/index.html",
   "assetGroups": [
     {
@@ -55,7 +55,7 @@
         "/zard-admin/favicon.ico",
         "/zard-admin/index.html",
         "/zard-admin/logo.png",
-        "/zard-admin/main-BIJFBTUR.js",
+        "/zard-admin/main-Z65DV7F2.js",
         "/zard-admin/manifest.webmanifest",
         "/zard-admin/polyfills-B6TNHZQ6.js",
         "/zard-admin/scripts-BBRDCTMK.js",
@@ -153,9 +153,9 @@
     "/zard-admin/icons/icon-72x72.png": "b279e1b82eaefac35a03a70f96f5ccac5b17c703",
     "/zard-admin/icons/icon-76x76.png": "273056fe9a3d93b51d423209a6733de544b7ece4",
     "/zard-admin/icons/icon-96x96.png": "feb2f0f0e435c2fff1cc4d0c653cdacd1d043f8c",
-    "/zard-admin/index.html": "c85cedb839be9639a29e659dd6603b9a671c88eb",
+    "/zard-admin/index.html": "b8e798d7946e77b19585b49069fefe2ba6e57a03",
     "/zard-admin/logo.png": "338ecca20f8fefeb9460db8ef6e40a70fe9e0267",
-    "/zard-admin/main-BIJFBTUR.js": "40e3cdde233ead9352e7462512323adfcf94f48e",
+    "/zard-admin/main-Z65DV7F2.js": "03e32406510bb611ee218d5871b60ea2d828fd20",
     "/zard-admin/manifest.webmanifest": "4dcf3c4120aacd17cadd92844d69a4f2045518bb",
     "/zard-admin/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "/zard-admin/scripts-BBRDCTMK.js": "0ff686011d5899c9e00f94edf3b74011657c991a",
