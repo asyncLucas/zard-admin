@@ -1,9 +1,9 @@
-// dynamic-zard-form.component.ts
 import {
   ChangeDetectionStrategy,
   Component,
   computed,
   effect,
+  inject,
   input,
   output,
   signal,
@@ -24,7 +24,6 @@ import {
 import { PersistFormDirective } from './persist-form.directive';
 import { ZardButtonComponent } from '../button/button.component';
 import { ZardCheckboxComponent } from '../checkbox/checkbox.component';
-import { ZardDatePickerComponent } from '../date-picker/date-picker.component';
 import { ZardFormModule } from '../form/form.module';
 import { ZardInputDirective } from '../input/input.directive';
 import { ZardSelectItemComponent } from '../select/select-item.component';
@@ -32,6 +31,8 @@ import { ZardSelectComponent } from '../select/select.component';
 import { ZardSwitchComponent } from '../switch/switch.component';
 import { ZardRadioComponent } from '../radio/radio.component';
 import { FieldConfig, FormConfig, ValidatorConfig } from './dynamic-form.model';
+import { TranslateService } from '@ngx-translate/core';
+import { ZardDatePickerComponent } from '../date-picker/date-picker.component';
 
 interface BuiltField {
   key: string;
@@ -39,7 +40,7 @@ interface BuiltField {
 }
 
 @Component({
-  selector: 'app-dynamic-form',
+  selector: 'ez-dynamic-form',
   standalone: true,
   imports: [
     CommonModule,
@@ -60,6 +61,7 @@ interface BuiltField {
 })
 export class DynamicZardFormComponent {
   private readonly fb = new FormBuilder();
+  private readonly translate = inject(TranslateService);
   readonly formConfig = input<FormConfig | null>(null);
   readonly submitted = output<any>();
   readonly form = signal<FormGroup | null>(null);
@@ -87,25 +89,24 @@ export class DynamicZardFormComponent {
   readonly layoutClasses = computed(() => {
     const cfg = this.formConfig();
     const gap = cfg?.gap ?? 4;
-    return `flex flex-wrap gap-${gap}`;
+    return `grid grid-cols-12 gap-${gap}`;
   });
 
   getFieldClasses(field: FieldConfig): string {
     const size = field.size ?? 12;
-    // Calculate percentage: size/12 * 100
-    // Use Tailwind's width classes that approximate the 12-column system
     const sizeMap: Record<number, string> = {
-      2: 'w-full md:w-[16.666667%] md:flex-[0_0_calc(16.666667%-1rem)]',
-      3: 'w-full md:w-[25%] md:flex-[0_0_calc(25%-1rem)]',
-      4: 'w-full md:w-[33.333333%] md:flex-[0_0_calc(33.333333%-1rem)]',
-      5: 'w-full md:w-[41.666667%] md:flex-[0_0_calc(41.666667%-1rem)]',
-      6: 'w-full md:w-[50%] md:flex-[0_0_calc(50%-1rem)]',
-      7: 'w-full md:w-[58.333333%] md:flex-[0_0_calc(58.333333%-1rem)]',
-      8: 'w-full md:w-[66.666667%] md:flex-[0_0_calc(66.666667%-1rem)]',
-      9: 'w-full md:w-[75%] md:flex-[0_0_calc(75%-1rem)]',
-      10: 'w-full md:w-[83.333333%] md:flex-[0_0_calc(83.333333%-1rem)]',
-      11: 'w-full md:w-[91.666667%] md:flex-[0_0_calc(91.666667%-1rem)]',
-      12: 'w-full',
+      1: 'col-span-12 md:col-span-1',
+      2: 'col-span-12 md:col-span-2',
+      3: 'col-span-12 md:col-span-3',
+      4: 'col-span-12 md:col-span-4',
+      5: 'col-span-12 md:col-span-5',
+      6: 'col-span-12 md:col-span-6',
+      7: 'col-span-12 md:col-span-7',
+      8: 'col-span-12 md:col-span-8',
+      9: 'col-span-12 md:col-span-9',
+      10: 'col-span-12 md:col-span-10',
+      11: 'col-span-12 md:col-span-11',
+      12: 'col-span-12',
     };
     return sizeMap[size] || sizeMap[12];
   }
@@ -154,6 +155,9 @@ export class DynamicZardFormComponent {
         case 'required':
           fns.push(Validators.required);
           break;
+        case 'requiredTrue':
+          fns.push(Validators.requiredTrue);
+          break;
         case 'minLength':
           fns.push(Validators.minLength(v.value ?? 0));
           break;
@@ -191,15 +195,16 @@ export class DynamicZardFormComponent {
 
     const errors = control.errors;
     const errorMessages: Record<string, (error: any) => string> = {
-      required: () => 'Este campo é obrigatório.',
-      minlength: (error) => `Mínimo de ${error.requiredLength} caracteres.`,
-      maxlength: (error) => `Máximo de ${error.requiredLength} caracteres.`,
-      email: () => 'Email inválido.',
-      min: (error) => `Valor mínimo: ${error.min}.`,
-      max: (error) => `Valor máximo: ${error.max}.`,
-      minDate: (error) => `Data mínima: ${new Date(error.minDate).toLocaleDateString()}.`,
-      maxDate: (error) => `Data máxima: ${new Date(error.maxDate).toLocaleDateString()}.`,
-      pattern: () => 'Formato inválido.',
+      required: () => this.translate.instant('VALIDATION.REQUIRED'),
+      requiredTrue: () => this.translate.instant('VALIDATION.REQUIRED_TRUE'),
+      minlength: (error) => this.translate.instant('VALIDATION.MINLENGTH', { requiredLength: error.requiredLength }),
+      maxlength: (error) => this.translate.instant('VALIDATION.MAXLENGTH', { requiredLength: error.requiredLength }),
+      email: () => this.translate.instant('VALIDATION.EMAIL'),
+      min: (error) => this.translate.instant('VALIDATION.MIN', { min: error.min }),
+      max: (error) => this.translate.instant('VALIDATION.MAX', { max: error.max }),
+      minDate: (error) => this.translate.instant('VALIDATION.MIN_DATE', { minDate: new Date(error.minDate).toLocaleDateString() }),
+      maxDate: (error) => this.translate.instant('VALIDATION.MAX_DATE', { maxDate: new Date(error.maxDate).toLocaleDateString() }),
+      pattern: () => this.translate.instant('VALIDATION.PATTERN'),
     };
 
     const errorKey = Object.keys(errors)[0];
@@ -207,7 +212,7 @@ export class DynamicZardFormComponent {
       return errorMessages[errorKey](errors[errorKey]);
     }
 
-    return 'Valor inválido.';
+    return this.translate.instant('VALIDATION.INVALID');
   }
 
   onSubmit(): void {

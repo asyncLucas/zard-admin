@@ -17,6 +17,7 @@ export interface FieldOption {
 
 export type ValidatorType =
   | 'required'
+  | 'requiredTrue'
   | 'minLength'
   | 'maxLength'
   | 'email'
@@ -31,7 +32,7 @@ export interface ValidatorConfig {
 }
 
 export interface FieldConfig {
-  label: string;
+  label?: string;
   type: ZFieldType;
   placeholder?: string;
   initialValue?: any;

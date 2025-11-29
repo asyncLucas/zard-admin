@@ -14,140 +14,142 @@
   >
     @for (field of fields(); track field.key) {
       @if (!field.config.hidden) {
-        <z-form-field [class]="getFieldClasses(field.config) + ' space-y-1'">
-          <label z-form-label [zRequired]="isRequired(field.config)">
-            {{ field.config.label }}
-          </label>
+        <div [ngClass]="getFieldClasses(field.config)">
+          <z-form-field class="space-y-1">
+            <label z-form-label [zRequired]="isRequired(field.config)">
+              {{ field.config.label }}
+            </label>
 
-          <z-form-control
-            [errorMessage]="hasError(field.key) ? getError(field.key) : ''"
-            [helpText]="
-              !hasError(field.key)
-                ? (field.config.helpText ?? field.config.placeholder ?? '')
-                : ''
-            "
-          >
-            <!-- TEXT / DECIMAL / FILE -->
-            @if (
-              field.config.type === 'text' ||
-              field.config.type === 'decimal' ||
-              field.config.type === 'file'
-            ) {
-              <input
-                z-input
-                [type]="
-                  field.config.type === 'decimal'
-                    ? 'number'
-                    : field.config.type === 'file'
-                      ? 'file'
-                      : 'text'
-                "
-                class="w-full"
-                [attr.name]="field.key"
-                [attr.id]="field.key"
-                [attr.autocomplete]="
-                  field.config.custom?.['autocomplete'] || 'off'
-                "
-                data-form-type="other"
-                data-1p-ignore
-                [attr.inputmode]="
-                  field.config.type === 'decimal'
-                    ? 'decimal'
-                    : field.config.type === 'text'
-                      ? 'text'
-                      : null
-                "
-                [placeholder]="field.config.placeholder"
-                [formControlName]="field.key"
-              />
-            }
+            <z-form-control
+              [errorMessage]="hasError(field.key) ? getError(field.key) : ''"
+              [helpText]="
+                !hasError(field.key)
+                  ? (field.config.helpText ?? field.config.placeholder ?? '')
+                  : ''
+              "
+            >
+              <!-- TEXT / DECIMAL / FILE -->
+              @if (
+                field.config.type === 'text' ||
+                field.config.type === 'decimal' ||
+                field.config.type === 'file'
+              ) {
+                <input
+                  z-input
+                  [type]="
+                    field.config.type === 'decimal'
+                      ? 'number'
+                      : field.config.type === 'file'
+                        ? 'file'
+                        : 'text'
+                  "
+                  class="w-full"
+                  [attr.name]="field.key"
+                  [attr.id]="field.key"
+                  [attr.autocomplete]="
+                    field.config.custom?.['autocomplete'] || 'off'
+                  "
+                  data-form-type="other"
+                  data-1p-ignore
+                  [attr.inputmode]="
+                    field.config.type === 'decimal'
+                      ? 'decimal'
+                      : field.config.type === 'text'
+                        ? 'text'
+                        : null
+                  "
+                  [placeholder]="field.config.placeholder"
+                  [formControlName]="field.key"
+                />
+              }
 
-            <!-- TEXTAREA -->
-            @if (field.config.type === 'text-area') {
-              <textarea
-                z-input
-                class="w-full resize-y"
-                rows="3"
-                [attr.name]="field.key"
-                [attr.id]="field.key"
-                [attr.autocomplete]="
-                  field.config.custom?.['autocomplete'] || 'off'
-                "
-                data-form-type="other"
-                [placeholder]="field.config.placeholder"
-                [formControlName]="field.key"
-              ></textarea>
-            }
+              <!-- TEXTAREA -->
+              @if (field.config.type === 'text-area') {
+                <textarea
+                  z-input
+                  class="w-full resize-y"
+                  rows="3"
+                  [attr.name]="field.key"
+                  [attr.id]="field.key"
+                  [attr.autocomplete]="
+                    field.config.custom?.['autocomplete'] || 'off'
+                  "
+                  data-form-type="other"
+                  [placeholder]="field.config.placeholder"
+                  [formControlName]="field.key"
+                ></textarea>
+              }
 
-            <!-- DATE PICKER -->
-            @if (field.config.type === 'date-picker') {
-              <z-date-picker
-                class="w-full"
-                [placeholder]="field.config.placeholder || 'Selecionar data'"
-                [zFormat]="field.config.custom?.['format'] || 'yyyy-MM-dd'"
-                [maxDate]="field.config.custom?.['maxDate']"
-                [minDate]="field.config.custom?.['minDate']"
-                [formControlName]="field.key"
-              />
-            }
+              <!-- DATE PICKER -->
+              @if (field.config.type === 'date-picker') {
+                <z-date-picker
+                  class="w-full"
+                  [placeholder]="field.config.placeholder || 'Selecionar data'"
+                  [zFormat]="field.config.custom?.['format'] || 'yyyy-MM-dd'"
+                  [maxDate]="field.config.custom?.['maxDate']"
+                  [minDate]="field.config.custom?.['minDate']"
+                  [formControlName]="field.key"
+                />
+              }
 
-            <!-- SELECT -->
-            @if (field.config.type === 'select') {
-              <z-select
-                class="w-full"
-                zPlaceholder="{{
-                  field.config.placeholder || 'Selecione uma opção'
-                }}"
-                [formControlName]="field.key"
-              >
-                @for (opt of field.config.options ?? []; track opt.key) {
-                  <z-select-item [zValue]="opt.key">
-                    {{ opt.value }}
-                  </z-select-item>
-                }
-              </z-select>
-            }
+              <!-- SELECT -->
+              @if (field.config.type === 'select') {
+                <z-select
+                  class="w-full"
+                  zPlaceholder="{{
+                    field.config.placeholder || 'Select an option'
+                  }}"
+                  [formControlName]="field.key"
+                >
+                  @for (opt of field.config.options ?? []; track opt.key) {
+                    <z-select-item [zValue]="opt.key">
+                      {{ opt.value }}
+                    </z-select-item>
+                  }
+                </z-select>
+              }
 
-            <!-- RADIO GROUP -->
-            @if (field.config.type === 'radio') {
-              <div
-                class="flex flex-col gap-2"
-                [class.flex-row]="field.config.custom?.['inline']"
-              >
-                @for (opt of field.config.options ?? []; track opt.key) {
-                  <span
-                    z-radio
-                    [value]="opt.key"
-                    [name]="field.key"
-                    [formControlName]="field.key"
-                  >
-                    {{ opt.value }}
-                  </span>
-                }
-              </div>
-            }
+              <!-- RADIO GROUP -->
+              @if (field.config.type === 'radio') {
+                <div
+                  class="flex flex-col gap-2"
+                  [class.flex-row]="field.config.custom?.['inline']"
+                >
+                  @for (opt of field.config.options ?? []; track opt.key) {
+                    <span
+                      z-radio
+                      [value]="opt.key"
+                      [name]="field.key"
+                      [formControlName]="field.key"
+                    >
+                      {{ opt.value }}
+                    </span>
+                  }
+                </div>
+              }
 
-            <!-- SWITCH -->
-            @if (field.config.type === 'switch') {
-              <z-switch [formControlName]="field.key">
-                {{ field.config.placeholder }}
-              </z-switch>
-            }
+              <!-- SWITCH -->
+              @if (field.config.type === 'switch') {
+                <z-switch [formControlName]="field.key">
+                  {{ field.config.placeholder }}
+                </z-switch>
+              }
 
-            <!-- CHECKBOX -->
-            @if (field.config.type === 'checkbox') {
-              <!-- single boolean checkbox -->
-              <span z-checkbox [formControlName]="field.key">
-                {{ field.config.placeholder || field.config.label }}
-              </span>
-            }
-          </z-form-control>
-        </z-form-field>
+              <!-- CHECKBOX -->
+              @if (field.config.type === 'checkbox') {
+                <!-- single boolean checkbox -->
+                <span z-checkbox [formControlName]="field.key">
+                  {{ field.config.placeholder || field.config.label }}
+                </span>
+              }
+            </z-form-control>
+          </z-form-field>
+        </div>
       }
     }
 
     <!-- Actions -->
-    <div class="w-full mt-6 flex justify-end gap-2">
+    <div class="col-span-12 mt-6 flex justify-end gap-2">
       <button
         type="button"
         z-button
