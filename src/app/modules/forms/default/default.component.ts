@@ -139,7 +139,7 @@ export class DefaultFormReactiveComponent {
       Validators.maxLength(20),
     ]),
     anyDate: new FormControl('', [Validators.required]),
-    developerId: new FormControl('', [Validators.required]),
+    developerId: new FormControl('fullstack', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [
       Validators.required,
