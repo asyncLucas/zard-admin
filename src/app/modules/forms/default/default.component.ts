@@ -15,6 +15,7 @@ import { ZardFormModule } from '@app/shared/components/form/form.module';
 import { ZardInputDirective } from '@app/shared/components/input/input.directive';
 import { ZardDatePickerComponent } from '@app/shared/components/date-picker/date-picker.component';
 import { ZardSelectItemComponent } from '@app/shared/components/select/select-item.component';
+import { ZardSelectComponent } from '@app/shared/components/select/select.component';
 
 @Component({
   selector: 'zard-demo-form-reactive',
@@ -24,6 +25,7 @@ import { ZardSelectItemComponent } from '@app/shared/components/select/select-it
     ZardInputDirective,
     ZardFormModule,
     ZardDatePickerComponent,
+    ZardSelectComponent,
     ZardSelectItemComponent,
   ],
   standalone: true,
