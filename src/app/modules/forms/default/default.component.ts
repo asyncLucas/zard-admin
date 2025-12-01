@@ -82,7 +82,7 @@ import { ZardSelectItemComponent } from '@app/shared/components/select/select-it
           profileForm.get('developerId')?.invalid &&
           profileForm.get('developerId')?.touched
         ) {
-          <z-form-message zType="error">Customer is required</z-form-message>
+          <z-form-message zType="error">Developer role is required</z-form-message>
         }
       </z-form-field>
 
